@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>welcome to the yummy blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&family=Schibsted+Grotesk:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- home section & header -->
+
+    <header class="header">
+        <a class="logo" href="#">
+            <img src="ice-cream-img/logo.webp" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" >home</a>
+            <a href="about.html">about</a>
+            <a href="#menu.html">menu</a>
+            <a href="products.html">products</a>
+            <a href="review.html">review</a>
+            <a href="blog.html" class="active">blog</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="icons">
+            <button>
+                <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+                <i id="basket" class="fa-solid fa-cart-shopping"></i>
+                <i id="menu-bars" class="fa-solid fa-bars"></i>
+            </button>   
+        </div>
+        <div class="search-form">
+            <input class="search-box" id="search-input" type="text" placeholder="search">
+            <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="order-card">
+            <p>You haven't ordered yet..</p>
+            <div class="btns">order now</div>
+        </div>
+    </header>
+ 
+    <!-- blog section -->
+    <section class="blog-sec">
+        <h1 class="heading">yummy <span>blog</span></h1>
+        <div class="blog-container">
+            <div class="blog-img">
+                <img src="ice-cream-img/blog1.webp" alt="blog-pic">
+            </div>
+            <div class="blogs">
+                <div class="blog1">
+                    <h2><a href=""><i class="fa-solid fa-ice-cream"></i></a>need to know scoop sizes?</h2>
+                    <div class="btns">visit the nutrition center</div>
+                </div>
+                <div class="blog2">
+                    <h2><a href=""><i class="fa-solid fa-ice-cream"></i></a>history: a short journey through first ice
+                        cream</h2>
+
+                    <div class="btns">read more</div>
+                </div>
+                <div class="blog3">
+                    <h2><a href=""><i class="fa-solid fa-ice-cream"></i></a>what's your flavor?</h2>
+
+                    <div class="btns">find yours here</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+ 
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="search">
+            <input class="search-box" type="text" placeholder="search">
+            <div class="btns">search</div>
+        </div>
+        <div class="share">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-reddit"></i>
+        </div>
+        <div class="links">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">blog</a>
+                <a href="#">contact</a>
+            
+        </div>
+        <div class="credit">
+            created by <span>@disconnectuss</span> all rights reserved &#169
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>

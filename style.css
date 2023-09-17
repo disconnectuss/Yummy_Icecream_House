@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+
+}
+/* error!! */
+.root{
+    --main-color:rgb(228, 157, 221);
+    --font-color:black;
+    --border: 0.1rem solid gray; 
+}
+
+
+/* base html codes for html--> 62.5% means 10px equals 1rem */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+/* i wanted to add webkit-scrollbar property here, but i couldn't. gonna try and change it later.. */
+body{
+    background-color:pink;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    height: 100%;
+}
+.btns{
+   font-size: 1.7rem;
+   color:#fff;
+   border:0.1rem solid pink;
+   background-color: black;
+   padding: 1rem;
+   margin-top: 2rem;
+   border-radius: 30rem;
+   cursor: pointer;
+   margin-bottom: 1rem;
+}
+.btns:hover{
+   background-color:azure;
+   color: pink;
+}
+section .heading{
+   text-transform: uppercase;
+   font-size: 4rem;
+   color: #fff;
+   margin-bottom: 3.5rem;
+   border-bottom: 0.1rem solid #fff;
+}
+.heading span{
+   text-transform: uppercase;
+   font-size: 4rem;
+   color: black;
+   opacity: 0.7;
+}
+.card:hover, .box:hover, img:hover{
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* header items */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 2rem 7%;
+    padding: 0 7%;
+    border-radius:30rem ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+ .logo img{
+    height: 7rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+ }
+ .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: black;
+    border-bottom: 0.1rem solid transparent;
+
+ }
+ .navbar a.active{
+   right: 3rem;
+ }
+ .navbar a.active,
+ .navbar a:hover{
+    border-color: pink;
+    padding-bottom: 0.5rem; 
+ }
+ .header .icons button {
+    background-color:  transparent;
+ }
+ #menu-bars{
+   border: 2px slid black;
+ }
+ .header .icons button i{
+     font-size: 2rem;
+     margin-left: 2rem;
+     cursor: pointer;
+ }
+.search-form{
+   position: absolute;
+   top: 115%;
+   right: 7%;
+   background-color: #fff;
+   width: 40rem;
+   height: 5rem;
+   display:flex;
+   align-items: center;
+   border-radius: 3rem;
+   box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+   transform: scaleY(0);
+}
+.search-form.active{
+   transform: scaleY(1);
+}
+.search-form i{
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   cursor: pointer;
+   justify-content: space-between;
+}
+.search-form input{
+   width: 100%;
+}
+.order-card{
+   position: absolute;
+   top: 95%;
+   background-color:rgba(255, 255, 255, 0.479);
+   width:30rem;
+   box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+   right:-100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+}
+.order-card.active{
+   right: 3rem;
+   margin-top: 5px;
+
+}
+
+.order-card p{
+   font-size: 1.5rem;
+   text-align: center;
+   margin-top: 2rem;
+}
+.order-card .btns{
+   border-radius: 5px;
+   opacity: 0.6;
+   width: 40%;
+   
+}
+
+ /* home section */
+ .home-sec { 
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(ice-cream-img/home2.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top:-12rem;
+    display: flex;
+    align-items: center;
+ }
+ .content{
+    margin: 0 7%;
+    color:#fff;;
+    opacity: 0.7;
+    border-radius: 2rem;
+    line-height: 1.8;
+ }
+ .content h3{
+    font-size: 6rem;
+ }
+ .content p{
+    text-transform: lowercase;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 0;
+    
+ }
+
+ /* about us section */
+.about-sec{
+   margin: 3.5rem 7%;
+}
+.heading{
+   text-transform: capitalize;
+   font-size: 400;
+   
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 2rem;
+}
+.row .about-img{
+   flex: 1 1 45rem;
+}
+.row div img{
+   width: 100%;
+   border-radius: 2rem;
+
+}
+.row .about-content{
+   line-height: 5;
+   padding: 2rem 0;
+   color: black;
+   
+}
+.row .about-content h3{
+   font-size: 3rem;
+
+}
+.row .about-content p{
+   font-size: 1.6rem;
+   opacity: 0.6;
+}
+
+/* menu section */
+.menu-sec{
+   margin: 3.5rem 7%;
+
+}
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+    
+}
+.box{
+   background-color: #fff;
+   border-radius: 3rem;
+   min-height: 60rem;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 2rem;
+   max-width: 30rem;
+}
+
+.box .box-img img{ 
+   width: 100%;
+   object-fit: cover; 
+   border-radius: 3rem;
+   height: 40rem;
+   align-self: center;
+}
+.category{
+   font-size: 2rem;
+   opacity: 0.6;
+}
+.box h3{
+   font-size: 2rem;
+   color: blueviolet;
+}
+.prices{
+   font-size: 1.6rem;
+   opacity: 0.6;
+}
+.prices span{
+   text-decoration: line-through;
+}
+
+/* products and recipes section */
+.product-sec{
+   margin:3.5rem 7%;
+}
+.card-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+
+}
+
+.card{
+   background-color: #fff;
+   border-radius: 3rem;
+   min-height: 60rem;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 2rem;
+   max-width: 40rem;
+}
+
+.card-title{
+   font-size: 1.5rem;
+   text-transform: uppercase;
+
+}
+.card-img img{
+   width: 100%;
+   border-radius: 3rem;
+   height: 40rem;
+}
+.card p{
+   font-size: 1.5rem;
+}
+.card-buttom{
+   display: flex;
+    align-self: end;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 10;
+
+}
+.card-buttom span{
+   align-self: start;
+}
+.card-buttom a i{
+    color:black;
+   
+}
+.card-buttom a i:hover{
+   font-size: 1.5rem;
+}
+/* rewiev section */
+.review-sec{
+   margin: 3.5rem 7%;
+}
+.rev-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+.rev-card{
+   background-color: #fff;
+   border-radius:20%;
+   min-height: 30rem;
+   position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 2rem;
+}
+.rev-img img{
+   height: 10rem;
+   width:10rem;
+   border-radius: 50%;
+   margin: 1rem;
+
+}
+.name{
+   opacity: 0.6;
+}
+.stars{
+   color: yellowgreen;
+}
+.rev-card h3{
+   margin: 2rem;
+}
+.rev-card q{
+   width: 50%;
+   font-size: 1.2rem;
+   opacity: 0.6;
+}
+
+/* blog section */
+.blog-sec{
+   margin: 3.5rem 7%;
+}
+.blog-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+.blog-img{
+   width: 100%;
+}
+.blog-img img{
+   height: 60rem;
+   border-radius: 3rem;
+}
+.blogs {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 50rem;
+   gap: 2rem;
+}
+.blog2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #fff;
+   padding: 10%;
+   border-radius: 3rem;
+
+
+}
+.blog1, .blog3{
+   display: flex;
+   flex-direction: column;
+   align-self: flex-start;
+   background-color: #fff;
+   padding: 10%;
+   border-radius: 3rem;
+}
+
+/* contact section */
+.con-sec{
+   margin: 3.5rem 7%;
+}
+.contact-row{
+   display: flex;
+   background-color: #fff;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+}
+.form {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 45rem;
+   width: 100%;
+   object-fit: cover;
+   padding: 5rem 2rem;
+   font-size: 3.5rem;
+  
+}
+
+.form h2{
+   text-transform: uppercase;
+   font-size: 3.5rem;
+
+}
+.map{
+   flex: 1 1 45rem;
+   width: 100%;
+   object-fit: cover;
+}
+
+.form div{
+   margin: 2rem;
+   border: 0.1rem solid ;
+   opacity: 0.8;
+}
+/* footer starts here */
+.footer{
+   background-color: darkgrey;
+   text-align: center;
+   margin-bottom: -200px;
+  
+
+}
+.footer .search{
+   display: flex;
+   justify-content: center;
+}
+.footer .search .search-box{
+   width: 30rem;
+   min-height: fit-content;
+   margin: 1rem 2rem;
+   padding: 1rem;
+   text-transform: none;
+   font-size: 1.2rem;
+   border-radius: 3rem;
+}
+.share{
+   display: flex;
+   justify-content: center;
+   gap:1rem;
+}
+.share i{
+   font-size: 3rem;
+   gap:2rem;
+   border:0.1rem solid;
+   border-radius:50%;
+   padding:0.5rem
+
+}
+.share i:hover{
+   background-color: pink;
+}
+.links{
+   margin: 2rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-bottom: 0.2rem #fff;
+}
+.links a{
+   font-size: 1.5rem;
+   color: black;
+   border:0.1rem solid;
+   padding: 0.7rem 2rem; 
+   background-color: pink;
+   border-radius: 2rem;
+   
+}
+.links a:hover{
+   background-color: #fff;
+}
+.links a.active{
+   background-color: #fff;
+}
+.credit{
+   font-size: 1.5rem;
+   color: black;
+   padding: 1rem;
+   border-top: 0.1rem solid #fff;
+}
+.credit span{
+   color: #fff;
+}
+/* responsive */
+@media(max-width:991px) {
+   html{
+      font-size: 55%;
+   }
+   section{
+      padding: 2rem;
+   }
+}
+@media(max-width:768px) {
+
+   #menu-bars{
+      display: inline-block;
+   }
+   .box{
+      padding: 2rem;
+   }
+   .navbar{
+      position: absolute;
+      top: 95%;
+      background-color: #fff;
+      width:20rem;
+      box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+      right: -50%;
+   }
+   .navbar.active{
+       left: 70%;
+   }
+   .navbar a {
+      color: black;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+   }
+   .navbar a.active{
+      border-bottom: pink;
+     
+   }
+
+}
