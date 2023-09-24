@@ -3,6 +3,7 @@
 
 
 Introduction
+
 At Yummy Ice Cream House, we are passionate about crafting the finest ice cream creations that will tantalize your taste buds and leave you craving for more. Our full responsive website, built with HTML, CSS, and JavaScript, serves as your gateway to an extraordinary ice cream experience.
 
 Explore Our Interactive Menu
